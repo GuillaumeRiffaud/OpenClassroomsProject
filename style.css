@@ -4,11 +4,26 @@ body {
     width: 1200px;
     display: flex;
     margin: auto;
+    background: black;
+    color: #303030;
 }
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+/* Toute la barre rouge */
 
 .barre_coloree {
     background: linear-gradient(#A80000, #C44040);
     max-width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barre_coloree article:nth-child(3) {
+    flex: 2;
 }
 
 .barre_coloree h2 {
@@ -16,14 +31,14 @@ body {
     color: #B41010;
     text-align: center;
     padding: 2%;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .photoperso {
     display: block;
-    margin: 20% auto 20% auto;
+    margin: 20% auto 10% auto;
     padding: 1%;
-    max-width: 250px;
+    max-width: 220px;
     border-radius: 50%;
     background: #C44040;
 }
@@ -44,13 +59,17 @@ li {
     margin-right: 10%;
 }
 
+
+/* Zone centrale */
+
 h1 {
-    font-size: 4rem;
-    font-weight: lighter;
+    font-size: 3.2rem;
+    font-weight: 100;
     color: #505050;
     margin-top: 15%;
     margin-left: 10%;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 em {
@@ -62,9 +81,39 @@ header h2 {
     font-size: 2rem;
     margin-left: 10%;
     margin-top: 0;
+    margin-bottom: 15%;
     color: #505050;
+    text-transform: none;
+    font-weight: 200;
 }
 
 h2 span {
     border-bottom: 2px solid #B41010;
+}
+
+main {
+    background: white;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+main section h2 {
+    min-width: 100%;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 60%;
+}
+
+main section aside {
+    min-width: 30%;
+    border: 1px solid black;
 }
