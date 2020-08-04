@@ -21,13 +21,11 @@ body {
     color: #303030;
 }
 
-
-/* @media all and (orientation: portrait) {
+@media all and (orientation: portrait) {
     body {
         flex-direction: column-reverse;
-        font-size: 32px;
     }
-} */
+}
 
 h2 {
     text-transform: uppercase;
@@ -90,12 +88,20 @@ li {
 }
 
 
-/* 
+/* Agrandissement de la barre rouge en mode portrait et rétrécissement des icones loisirs*/
+
 @media all and (orientation: portrait) {
     .barre_coloree {
         max-width: 100%;
     }
-} */
+    .barre_coloree footer img {
+        width: 15%;
+        height: 15%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+    }
+}
 
 
 /* Zone centrale */
@@ -149,7 +155,6 @@ main section {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: large;
-    /* border: 2px solid black; */
 }
 
 main section h2,
@@ -157,6 +162,10 @@ main footer h2 {
     min-width: 95%;
     margin-bottom: 5%;
     border-bottom: 2px solid #B41010;
+}
+
+main section h3 {
+    text-transform: uppercase;
 }
 
 main section article {
@@ -184,6 +193,7 @@ main footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: large;
 }
 
 main footer article {
