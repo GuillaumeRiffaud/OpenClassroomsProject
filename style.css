@@ -200,7 +200,7 @@ main section aside {
 @media all and (orientation: portrait) {
     main section aside {
         min-width: 95%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 2%;
     }
 }
