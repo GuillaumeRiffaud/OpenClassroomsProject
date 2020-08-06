@@ -166,11 +166,23 @@ main section {
     font-size: 1.2rem;
 }
 
+@media all and (orientation: portrait) {
+    main section {
+        font-size: 1.3rem;
+    }
+}
+
 main section h2,
 main footer h2 {
     min-width: 95%;
     margin-bottom: 5%;
     border-bottom: 2px solid #B41010;
+}
+
+@media all and (orientation: portrait) {
+    main section h2 {
+        font-size: 2rem;
+    }
 }
 
 main section h3 {
@@ -234,6 +246,7 @@ main footer article {
 @media all and (orientation: portrait) {
     main footer article {
         width: 90%;
+        font-size: 1.8rem;
     }
 }
 
